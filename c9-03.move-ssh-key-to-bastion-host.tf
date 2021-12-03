@@ -18,6 +18,8 @@ resource "null_resource" "null_copy_ssh_key_to_bastion" {
   provisioner "remote-exec" {
     inline = [
       "sudo chmod 400 /tmp/terraform-azzure.pub"
+      #"ansible-playbook nameofplay.yaml"
+      
     ]
   }
 }

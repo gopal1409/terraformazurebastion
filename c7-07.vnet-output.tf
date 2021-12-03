@@ -1,8 +1,4 @@
 
-gopal das <gopal1409@gmail.com>
-4:41 PM (0 minutes ago)
-to me
-
 # Virtual Network Outputs
 ## Virtual Network Name
 output "virtual_network_name" {

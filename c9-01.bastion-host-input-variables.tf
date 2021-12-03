@@ -1,5 +1,5 @@
 variable "bastion_service_subnet_name" {
-  default=AzureBastionSubnet
+  default = "AzureBastionSubnet"
 }
 variable "bastion_service_address_prefixes" {
   default = ["10.0.101.0/27"]
