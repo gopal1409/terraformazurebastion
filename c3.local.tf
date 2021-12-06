@@ -1,9 +1,11 @@
+# Define Local Values in Terraform
 locals {
-  owners = var.business_devision 
+  owners = var.business_divsion
   environment = var.environment
-  resource_name_prefix = "${var.business_devision}-${var.environment}" #mostly local variable is used for concatination
+  resource_name_prefix = "${var.business_divsion}-${var.environment}"
+  #name = "${local.owners}-${local.environment}"
   common_tags = {
-      owners  = local.owners
-      environment = local.environment
+    owners = local.owners
+    environment = local.environment
   }
-}
+} 
