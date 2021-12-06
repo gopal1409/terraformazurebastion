@@ -7,7 +7,7 @@ output "web_lb_public_ip_address" {
 # Load Balancer ID
 output "web_lb_id" {
   description = "Web Load Balancer ID."
-  value = azurerm_lb.web_lb.id
+  value = azurerm_lb.web_lb.id 
 }
 
 # Load Balancer Frontend IP Configuration Block
