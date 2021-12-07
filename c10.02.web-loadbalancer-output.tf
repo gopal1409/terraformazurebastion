@@ -10,7 +10,7 @@ output "web_lb_id" {
   value = azurerm_lb.web_lb.id 
 }
 
-# Load Balancer Frontend IP Configuration Block
+# Load Balancer Frontend IP Configuration Blocka
 output "web_lb_frontend_ip_configuration" {
   description = "Web LB frontend_ip_configuration Block"
   value = [azurerm_lb.web_lb.frontend_ip_configuration]
