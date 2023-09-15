@@ -19,7 +19,7 @@ resource "null_resource" "null_copy_ssh_key_to_bastion" {
   provisioner "remote-exec" {
     inline = [
       "sudo chmod 400 /tmp/terraform-azzure.pem"
-      "sudo touch /tmp/amdocs"
+      #"sudo touch /tmp/amdocs"
       #"java -jar [agent.jar](Jenkins URL/jnlpJars/agent.jar) -jnlpUrl Jenkins URL/computer//jenkins-agent.jnlp -secret 9b52b3f7ad1fb603bee7315d0644adc9"
     ]
   }
