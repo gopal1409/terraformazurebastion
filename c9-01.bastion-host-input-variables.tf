@@ -3,6 +3,7 @@ variable "bastion_service_subnet_name" {
   description = "Bastion Service Subnet Name"
   default = "AzureBastionSubnet"
 }
+##bastion host subnet name should be always AzureBastionSubnet
 
 variable "bastion_service_address_prefixes" {
   description = "Bastion Service Address Prefixes"

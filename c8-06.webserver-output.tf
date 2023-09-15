@@ -1,8 +1,10 @@
 # Different Outputs with Terraform For Loops
 
 # Output List - Single Input to for loop
+#i want to do the iteration on single value
 output "web_linuxvm_private_ip_address_list" {
   description = "Web Linux Virtual Machine Private IP"
+  #azurerm_linux_virtual_machine.web_linuxvm
   #value = azurerm_linux_virtual_machine.web_linuxvm.private_ip_address
   value = [for vm in azurerm_linux_virtual_machine.web_linuxvm: vm.private_ip_address]
 }
@@ -36,6 +38,7 @@ output "web_linuxvm_network_interface_id_list" {
 output "web_linuxvm_network_interface_id_map" {
   description = "Web Linux VM Network Interface ID"
   #value = azurerm_network_interface.web_linuxvm_nic.id
+ # => #3this is required for iteration or sometime it is called as splat operator
   value = {for vm, nic in azurerm_network_interface.web_linuxvm_nic: vm => nic.id }
 }
 

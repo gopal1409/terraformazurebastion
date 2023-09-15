@@ -27,6 +27,10 @@ output "web_subnet_id" {
 ## Web Subnet NSG Name 
 output "web_subnet_nsg_name" {
   description = "WebTier Subnet NSG Name"
+  ###to map the output value we use the resource block
+  #to display the subnet name it need to be called from somewhere
+  ###some
+  #fromt he tfstate file the value be there
   value = azurerm_network_security_group.web_subnet_nsg.name
 }
 
