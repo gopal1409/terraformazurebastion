@@ -7,7 +7,7 @@ resource "azurerm_public_ip" "bastion_host_publicip" {
   sku = "Standard"
 }
 
-# Resource-2: Create Network Interface
+# Resource-2: Create Network Interfacehi
 resource "azurerm_network_interface" "bastion_host_linuxvm_nic" {
   name                = "${local.resource_name_prefix}-bastion-host-linuxvm-nic"
   location            = azurerm_resource_group.rg.location
