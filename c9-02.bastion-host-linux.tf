@@ -1,3 +1,4 @@
+/*
 # Resource-1: Create Public IP Address
 resource "azurerm_public_ip" "bastion_host_publicip" {
   name                = "${local.resource_name_prefix}-bastion-host-publicip"
@@ -44,4 +45,4 @@ resource "azurerm_linux_virtual_machine" "bastion_host_linuxvm" {
     sku = "83-gen2"
     version = "latest"
   }
-}
+}*/
